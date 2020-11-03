@@ -1,0 +1,3 @@
+C:/Users/lucas/CLionProjects/simulatron/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/lucas/CLionProjects/simulatron/cmake-build-debug/CMakeFiles/automaton.dir
+C:/Users/lucas/CLionProjects/simulatron/cmake-build-debug/CMakeFiles/edit_cache.dir
