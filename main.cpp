@@ -5,11 +5,11 @@
 int main() {
 
     human Bertha;
+    Bertha.born_sex = 1;
 
     for (int i = 0; i < 1000; i++) {
         Sleep(50);
-        Bertha = tickHunger(&Bertha);
-        Bertha = tickDeath(&Bertha);
+        Bertha = humanTick(&Bertha);
         std::cout << Bertha.hunger << ' ' << Bertha.alive << '\t';
     }
     std::cout << "yeah";

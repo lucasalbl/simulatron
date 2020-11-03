@@ -5,12 +5,16 @@
 #include "human.h"
 
 
-human tickHunger(human* H) {
-    if (H->alive) {
-        H->hunger += 0.05;
-    } else {
-        H->hunger = 0;
+human humanTick(human* H) {
+    if (H->alive == true) {
+        tickHunger(H);
+        tickDeath(H);
     }
+    return *H;
+}
+
+human tickHunger(human* H) {
+        H->hunger = H->hunger + 0.03 + 0.02*H->born_sex;
     return *H;
 }
 

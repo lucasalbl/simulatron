@@ -8,12 +8,13 @@
 
 class human {
 public:
-    bool born_sex = 0;
+    bool born_sex = 0; // 0 = female, 1 = male. No support for intersex as of now.
     bool alive = true;
-    float hunger = 0.0f;
+    double hunger = 0.0f;
 
 };
 
+human humanTick(human*);
 human tickHunger(human*);
 human tickDeath(human*);
 
