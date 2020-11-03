@@ -10,7 +10,10 @@ int main() {
     for (int i = 0; i < 1000; i++) {
         Sleep(50);
         Bertha = humanTick(&Bertha);
-        std::cout << Bertha.hunger << ' ' << Bertha.alive << '\t';
+        std::cout << Bertha.hunger << '\t' << Bertha.thirst <<'\t' << Bertha.alive << '\n';
+        if (Bertha.alive == false) {
+            return 0;
+        }
     }
     std::cout << "yeah";
     return 0;
