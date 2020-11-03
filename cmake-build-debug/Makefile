@@ -60,17 +60,6 @@ CMAKE_BINARY_DIR = C:\Users\lucas\CLionProjects\simulatron\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	echo >nul && "C:\Users\lucas\AppData\Local\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache\fast: rebuild_cache
-
-.PHONY : rebuild_cache\fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -81,6 +70,17 @@ edit_cache:
 edit_cache\fast: edit_cache
 
 .PHONY : edit_cache\fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	echo >nul && "C:\Users\lucas\AppData\Local\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache\fast: rebuild_cache
+
+.PHONY : rebuild_cache\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -115,17 +115,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named automaton
+# Target rules for targets named simulatron
 
 # Build rule for target.
-automaton: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) automaton
-.PHONY : automaton
+simulatron: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) simulatron
+.PHONY : simulatron
 
 # fast build rule for target.
-automaton\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\automaton.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\build
-.PHONY : automaton\fast
+simulatron\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulatron.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\build
+.PHONY : simulatron\fast
 
 human.obj: human.cpp.obj
 
@@ -133,7 +133,7 @@ human.obj: human.cpp.obj
 
 # target to build an object file
 human.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\automaton.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\human.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulatron.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\human.cpp.obj
 .PHONY : human.cpp.obj
 
 human.i: human.cpp.i
@@ -142,7 +142,7 @@ human.i: human.cpp.i
 
 # target to preprocess a source file
 human.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\automaton.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\human.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulatron.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\human.cpp.i
 .PHONY : human.cpp.i
 
 human.s: human.cpp.s
@@ -151,7 +151,7 @@ human.s: human.cpp.s
 
 # target to generate assembly for a file
 human.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\automaton.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\human.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulatron.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\human.cpp.s
 .PHONY : human.cpp.s
 
 main.obj: main.cpp.obj
@@ -160,7 +160,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\automaton.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulatron.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -169,7 +169,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\automaton.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulatron.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -178,7 +178,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\automaton.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulatron.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -189,7 +189,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... automaton
+	@echo ... simulatron
 	@echo ... human.obj
 	@echo ... human.i
 	@echo ... human.s

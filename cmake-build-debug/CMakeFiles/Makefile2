@@ -57,7 +57,7 @@ CMAKE_BINARY_DIR = C:\Users\lucas\CLionProjects\simulatron\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles\automaton.dir\all
+all: CMakeFiles\simulatron.dir\all
 
 .PHONY : all
 
@@ -67,36 +67,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles\automaton.dir\clean
+clean: CMakeFiles\simulatron.dir\clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/automaton.dir
+# Target rules for target CMakeFiles/simulatron.dir
 
 # All Build rule for target.
-CMakeFiles\automaton.dir\all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\automaton.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\automaton.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lucas\CLionProjects\simulatron\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target automaton"
-.PHONY : CMakeFiles\automaton.dir\all
+CMakeFiles\simulatron.dir\all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulatron.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulatron.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lucas\CLionProjects\simulatron\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target simulatron"
+.PHONY : CMakeFiles\simulatron.dir\all
 
 # Build rule for subdir invocation for target.
-CMakeFiles\automaton.dir\rule: cmake_check_build_system
+CMakeFiles\simulatron.dir\rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lucas\CLionProjects\simulatron\cmake-build-debug\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lucas\CLionProjects\simulatron\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles\automaton.dir\rule
+.PHONY : CMakeFiles\simulatron.dir\rule
 
 # Convenience name for target.
-automaton: CMakeFiles\automaton.dir\rule
+simulatron: CMakeFiles\simulatron.dir\rule
 
-.PHONY : automaton
+.PHONY : simulatron
 
 # clean rule for target.
-CMakeFiles\automaton.dir\clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\automaton.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\automaton.dir\clean
-.PHONY : CMakeFiles\automaton.dir\clean
+CMakeFiles\simulatron.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulatron.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simulatron.dir\clean
+.PHONY : CMakeFiles\simulatron.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

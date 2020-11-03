@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
-project(automaton)
+project(simulatron)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(automaton main.cpp human.cpp human.h)
+add_executable(simulatron main.cpp human.cpp human.h)
