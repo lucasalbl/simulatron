@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h>
 #include "human.h"
+#include <vector>
 
 int main() {
 
@@ -9,7 +10,7 @@ int main() {
 
     for (int i = 0; i < 1000; i++) {
         Sleep(50);
-        Bertha = humanTick(&Bertha);
+        Bertha = humanLogic(&Bertha);
         std::cout << Bertha.hunger << '\t' << Bertha.thirst <<'\t' << Bertha.alive << '\n';
         if (Bertha.alive == false) {
             return 0;
