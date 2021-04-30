@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/simulatron.dir/human.cpp.o"
-  "CMakeFiles/simulatron.dir/main.cpp.o"
-  "simulatron"
+  "CMakeFiles/simulatron.dir/human.cpp.obj"
+  "CMakeFiles/simulatron.dir/main.cpp.obj"
+  "simulatron.exe"
+  "simulatron.exe.manifest"
+  "simulatron.lib"
   "simulatron.pdb"
 )
 
