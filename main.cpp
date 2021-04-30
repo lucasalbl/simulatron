@@ -1,8 +1,10 @@
 #include <iostream>
-#include <windows.h>
+#include <thread>
+#include <chrono>
 #include "human.h"
 #include <vector>
 #include <string>
+
 
 int main() {
 
@@ -10,13 +12,13 @@ int main() {
     Bertha.born_sex = 1;
 
     for (int i = 0; i < 1000; i++) {
-        Sleep(50);
+        std::this_thread::sleep_for(std::chrono::milliseconds (50));
         Bertha = humanLogic(&Bertha);
         std::cout << Bertha.hunger << '\t' << Bertha.thirst <<'\t' << Bertha.alive << Bertha.wants_list.size() << '\n';
-        for (unsigned long j = 0; i < Bertha.wants_list.size(); j++) {
-            std::cout << Bertha.wants_list[j].first << Bertha.wants_list[j].second << "t\n";
+        for (auto & j : Bertha.wants_list) {
+            std::cout << j.first << j.second << "t\n";
         }
-        if (Bertha.alive == false) {
+        if ( !Bertha.alive ) {
             return 0;
         }
     }

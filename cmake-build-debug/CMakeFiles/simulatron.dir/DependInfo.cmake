@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/lucas/CLionProjects/simulatron/human.cpp" "C:/Users/lucas/CLionProjects/simulatron/cmake-build-debug/CMakeFiles/simulatron.dir/human.cpp.obj"
-  "C:/Users/lucas/CLionProjects/simulatron/main.cpp" "C:/Users/lucas/CLionProjects/simulatron/cmake-build-debug/CMakeFiles/simulatron.dir/main.cpp.obj"
+  "/Users/Lucas/CLionProjects/simulatron/human.cpp" "/Users/Lucas/CLionProjects/simulatron/cmake-build-debug/CMakeFiles/simulatron.dir/human.cpp.o"
+  "/Users/Lucas/CLionProjects/simulatron/main.cpp" "/Users/Lucas/CLionProjects/simulatron/cmake-build-debug/CMakeFiles/simulatron.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
